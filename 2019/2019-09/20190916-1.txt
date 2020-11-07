@@ -1,0 +1,54 @@
+Targeted advertising uses sophisticated methods to let marketers drill down to specific audiences.
+
+目標性廣告利用複雜的方式讓行銷商能夠對特定的客層進行研究。
+
+句子選自此影片 : 【科技】怎麼都是廣告！Facebook 營運的秘密是？(How Does Facebook Make Money? Ads, Ads, Ads)
+
+
+1. _
+* target [ˋtɑrgɪt] (v.) （廣告、批評或產品）以…為目標（或對象）
+- The TV commercial for the toy is targeted at children of ages 7 to 12.
++ 該玩具的電視廣告針對的是7至12歲的兒童。
+* target [ˋtɑrgɪt] (n.) 目標，對象
+- Capital cities were often targeted during wars.
++ 首都城市經常成為戰爭的目標。
+- The newly-established company's target is to become the fastest growing startup in 2009.
++ 新成立的公司的目標是成為2009年增長最快的初創公司。
+- It is very easy for elders to become the target of fraud.
++ 老年人很容易成為欺詐的目標。
+
+2. _
+* advertising [ˋædvɚ͵taɪzɪŋ] (n.) 廣告（業）
+- The company has always been the top dog in the advertising industry.
++ 該公司一直是廣告業的佼佼者。
++ top dog => 龍頭企業
+* advertise [ˋædvɚtaɪz] (v.) 登廣告，做廣告，宣傳
+- The new product was advertised on TV during peak viewing time, so it drew a lot of attention.
++ 新產品在峰值觀看期間在電視上做廣告，因此引起了很多關注。
++ Peak => 黃金時段
+* advertisement [ædvɚˋtaɪzmənt] (n.) 廣告；啟事
+- A newspaper advertisement for the new movie.
++ 這部新電影的報紙廣告。
+- She is a great advertisement for practicing English on a daily basis because she has improved noticeably since she started.
++ 她是一個每天練習英語的好廣告，因為自從她開始以來，她的表現明顯提高。
++ be + an + advertisement + for (something) => 現身說法，活廣告
+- advertisement => AD
+
+3. _
+* sophisticated [səˋfɪstɪketɪd] (adj.) 精密的，複雜的，先進的；成熟老練的，見多識廣的
+- The research requires sophisticated equipment and the best scientists.
++ 該研究需要先進的設備和最好的科學家。
+- People consider her to be sophisticated despite her young age.
++ 儘管年紀太小，人們仍然認為她很成熟。
+* sophisticate [səˋfɪstɪket] (n.) 成熟老練的人
+* sophistication [səfɪstɪˋkeʃən] (n.) 世故、成熟；精密化
+- That dark red gown gave the young lady a hint of sophistication.
++ 那件深紅色長袍給這位年輕女士帶來了一絲精緻感。
+- The sophistication of cell phones has increased a great deal over the past few years.
++ 在過去的幾年裡，手機的複雜程度有了很大提高。
+
+4. _
+* drill down [drɪl daʊn] (v.) 深層探究
+- The different links on the website help users drill down the exact information they need.
++ 網站上的不同鏈接可幫助用戶深入了解他們所需的確切信息。
+* drilldown [drɪldaʊn] (n.) 挖掘式信息提供系统

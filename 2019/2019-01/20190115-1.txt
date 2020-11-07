@@ -1,0 +1,59 @@
+In 2007, scientists compared height and DNA between more than 11,000 pairs of siblings and found that, across humans, 86% of height's variation can be explained by genetics. As traits go, this is very high; for comparison, genetics only explains about 26% of left-handedness.
+
+2007 年，科學家將超過 11,000 對的手足身高與 DNA 進行比較。他們發現整個人類世界， 86% 的身高變化可從基因上做解釋。這個數字結果其實是相當高的；相比來說，基因只能解釋大約 26% 的左撇子成因。
+
+1. _
+ * compare [kəmˋpɛr] (v.) 比較，對照
+ - If you need to compare with other people to be happy, that means you actually feel inferior.
+ + 如果你需要與其他人比較，那就意味著你真的感到自卑。
+ + inferior <=> superior, inferiority <=> superiority
+ - compare with sth/sb
+ * contrast [ˋkɑn͵træst] (v.) 形成對照
+ - contrast with + sth/sb
+ - The result of today's test contrasts sharply with the one done a year ago.
+ + 今天的測試結果與一年前的結果形成鮮明對比。
+ + sharply => 截然，鮮明的
+ + sth contrast with sth
+ + contrasts sharply with => 鮮明對比
+ + in stark contrast => 鮮明對比 (n)
+
+2. _
+ * pair [pɛr] (n.) 一對，一雙
+ - Mom bought me a pair of shoes for Christmas.
+ + 媽媽給我買了一雙鞋，當聖誕禮物。
+ * pair [pɛr] (v.) 使成對
+ - I don't want to pair with him. He's always lazy and irresponsible.
+ + 我不想和他配對他總是懶惰和不負責任的。
+ - pair with sb
+
+3. _
+ * sibling [ˋsɪblɪŋ] (n.) 兄弟姊妹
+ - I don't have any siblings, so I felt kind of lonely in childhood.
+ + 我沒有任何兄弟姐妹，所以我在童年時感到孤獨。
+ + alone => 獨自一人, I eat alone.
+ + lonely => 感到孤單(有孤單感), I feel lonely at night. I feel lonely when I'm alone.
+
+4. _
+ * variation [vɛrɪˋeʃən] (n.) 變化；變動
+ - The test shows some variations in students' ability to deal with emotional problems.
+ + 該測試顯示了學生處理情緒問題的能力的一些變化。
+ + show some variations in sth => 什麼東西有一些變化。
+ + emotional problems => 情緒問題
+ * various [ˋvɛrɪəs] (adj.) 不同的；各種各樣的
+ - Managing relationships is quite difficult because we will encounter various problems in a relationship.
+ + 管理關係非常困難，因為我們會在關係中遇到各種問題。
+ - various 強調不同
+ + many 強調多
+
+5. _
+ * genetics [dʒəˋnɛtɪks] (n.) 遺傳學
+ - For Tim, genetics is the most interesting and intriguing subject.
+ + 對於Tim來說，遺傳學是最有趣和最有趣的主題。
+ + interesting and intriguing => 有趣且引人入勝
+ - The Genetic algorithm is an important algorithm in Machine learning.
+6. _
+ * trait [tret] (n.) 特徵，特點
+ - He has really likable personality traits which made him very popular.
+ + 他有很可愛的性格特徵，這讓他非常受歡迎。
+ + likable => 討喜的
+ + personality traits => 人格特點

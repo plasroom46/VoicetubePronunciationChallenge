@@ -1,0 +1,18 @@
+Your router is one of many routers which make up your provider's network.
+
+供應商的網路由眾多的路由器所組成，而你的只是其中之一。
+
+句子選自此影片：【科技】什麼！？網速不是愈貴愈快嗎？ (Why You’re Probably Paying For Faster Internet Speeds Than You Use | WSJ)
+
+1. router [ˋrutɚ] (n.) 路由器
+- I think my router isn’t working. I need to call my telecom company (telecom provider).
+
+2. provider [prəˋvaɪdɚ] (n.) 供應商
+- Data(手機)網路流量
+- Unlimited data吃到飽網路
+- Plan（網路）方案
+- The website has the worst service in the world. I’m gonna call the provider(供應商) and yell at them.
+
+3. network [ˋnɛt͵wɝk] (n.) 電腦網路
+- The company just spent three million dollars on improving the computer’s network (固網）.
+- Optimize your network.使你的網路更佳化

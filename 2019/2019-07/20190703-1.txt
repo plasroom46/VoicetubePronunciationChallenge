@@ -1,0 +1,45 @@
+It's a reason why companies are obsessed with collecting data.
+
+這就是為什麼大公司會著迷於蒐集數據。
+
+句子選自此影片 : 機器如何學習？為什麼網站都知道你想看什麼？(How Machines Learn)
+
+.............................
+
+A” reason means it could be one of many reasons.( *不定冠詞；infinite article)
+
+“The” reason. It means it may be the only reason or the reason that everyone is familiar with.(*定冠詞；finite article)
+.....................
+
+1. _
+ * algorithm [ˋælgə͵rɪðm] (n.) (尤指電腦使用的) 演算法；計算程式
+ - it's a set of mathematical instructions or rules that especially if given to a computer will help the computer to calculate an answer to a problem.
+ - Music apps use algorithms to predict the probability that music fans will like a particular band.
+ + 音樂應用程序使用算法來預測音樂粉絲喜歡特定樂隊的概率。
+
+2. _
+ * module [ˋmɑdʒul] (n.) 組件；模組
+ - it's defined as one of a set of separate parts that when combined form a complete whole.
+ - The full computer program is made up of several modules which should be individually tested before being integrated.
+ + 完整的計算機程序由幾個模組組成，在集成之前應該單獨測試。
+
+3. _
+ * random [ˋrændəm] (adj.) 任意的；隨機的；胡亂的
+ - It means happening done or chosen by chance rather than according to a plan
+ - We asked a random sample or selection of people what they thought.
+ + 我們隨機抽樣或選擇了他們的想法。
+
+4. _
+ * infinite [ˋɪnfənɪt] (adj.) 無限的；無邊的；極大的
+ - it means without limits extremely large or great
+ - The universe is theoretically infinite.
+ + 宇宙從理論上是無限的。
+ - With infinite patience, she explained the complex procedure to us.
+ + 她以無限的耐心向我們解釋了複雜的程序。
+
+5. _
+ * cycle [ˋsaɪk!] (n.) (機器的) 工作週期；工作程式
+ - means one in a series of movements that a machine performs
+ - This washing machine has a 15-minute cycle.
+ + 這台洗衣機的周期為15分鐘。
+

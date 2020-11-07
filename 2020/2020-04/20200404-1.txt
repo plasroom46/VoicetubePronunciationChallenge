@@ -1,0 +1,43 @@
+The problem is, FOBO induces such severe analysis paralysis that it can negatively impact both your personal and your professional life.
+
+問題在於 FOBO 會讓你過度認真思考問題，這種過度認真會對你的生活和工作帶來負面影響。
+
+句子選自此影片：【TED】總是選擇障礙嗎？專家教你如何快速做出決定！ (How to make faster decisions | The Way We Work, a TED series)
+
+
+1. _
+* option [ˋɑpʃən] (n.) 選擇；未來購買權
+- Since the coronavirus outbreak, it's the best option to cancel your trip to Japan
++ 自coronavirus爆發以來，取消您的日本旅行的最佳選擇
+* optional [ˋɑpʃən!] (adj.) 可選擇的，非強制性的
+- You can go to the party if you want to. If you don't want to go, you don't have to. It's totally optional.
++ 如果您願意，可以參加聚會，不想就不必參加，這完全是可選的。
+* have no option but to do something [hæv no ˋɑpʃən bʌt tu du ˋsʌmθɪŋ] (idiom.) 別無選擇
+- Although Kate is a good friend of mine, she doesn't want to follow the government's rule to quarantine after getting back from the broad, so I have no option but to report her to the police
++ 雖然凱特（Kate）是我的好朋友，但她不想從大批回來後按照政府的規定檢疫，所以我別無選擇，只能向警察報告
+* quarantine [ˋkwɔrən͵tin] (n./v.) 隔離檢疫；隔離 (動物或人)
+
+2. _
+* analysis [əˋnæləsɪs] (n..) 分析
+- The water sample was analyzed and the chemical analysis revealed that the water contained a high concentration of heavy metals.
++ 對水樣品進行了分析，化學分析表明水中含有高濃度的重金屬。
+* analyse [ˋæn!͵aɪz] (v..) 分析 (英)
+= analyze (美)
+* paralysis [pəˋræləsɪs] (n..) 麻痺，癱瘓
+- The label said that the medicine may cause paralysis of some parts of the body. And after taking it, Max's face muscles were paralyzed.
++ 標籤上說這種藥可能導致身體某些部位麻痺，服用後Max的臉部肌肉癱瘓了。
+* paralyse [ˋpærə͵laɪz] (v..) 麻痺，癱瘓 (英)
+= paralyze (美)
+
+3. _
+* professional [prəˋfɛʃən!] (adj./n.) 專業的，職業的，非常內行的/內行，專家，職業選手
+- Since you are a computer science engineer, can I ask you a professional question about this coding?
++ 既然您是計算機科學工程師，我可以問您有關此編碼的專業問題嗎？
+- Roger Federer is a professional tennis player.
++ 羅傑·費德勒（Roger Federer）是一位職業網球選手。
+= pro (n.)
+* profession [prəˋfɛʃən] (n..) 職業，同行
+- He reached the heights of his profession at the age of 35.
++ 他在35歲時達到了職業的高峰。
+- The teaching profession seems very low salaries.
++ 教學行業的工資很低。

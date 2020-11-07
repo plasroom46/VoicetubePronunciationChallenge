@@ -1,0 +1,36 @@
+And traffic management algorithms group riders by destination to get passengers and empty cabins where they need to be.
+
+還有流量管理演算法將乘客依據目的地來分群，把乘客和空車廂送到他們該去的地方。
+
+句子選自此影片 : 是否會有一英哩高的摩天大樓？ (Will there ever be a mile-high skyscraper? - Stefan Al)
+
+rider = passenger
+- bicycle rider
+- motorcycle rider
+
+1. _
+ * algorithm [ˋælgə͵rɪðm] (n.) 演算法
+ - The algorithms in this app are able to calculate the distance you walked every day.
+ + 此應用程序中的算法能夠計算您每天走的距離。
+app=application
+
+2. _
+ * group by [] (.) 依...分類
+ - group something or somebody by
+ - The teacher grouped the kids by their height.
+ + 老師按照身高把小孩們分組。
+
+3. _
+ * destination [͵dɛstəˋneʃən] (n.) 目的地；終點
+ - Her ideal career destination is to become a college professor.
+ + 她理想的職業目標是成為一名大學教授。
+ * tourist destination [] (.) 觀光景點
+ * holiday destination [] (.) 度假景點
+
+4. _
+ * cabin [ˋkæbɪn] (n.) 小木屋；車廂；機艙、船艙
+ - This old man lived in a small cabin in the woods for years.
+ + 這位老人住在樹林裡的小木屋裡多年。
+ - Working as a cabin crew member is exhausting.
+ - cabin crew
+ + 空服員的工作非常累人。

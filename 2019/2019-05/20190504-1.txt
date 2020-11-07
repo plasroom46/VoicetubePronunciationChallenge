@@ -1,0 +1,34 @@
+This concept is called implementation intention. Basically when you write down the conditions of completing a task.
+
+這個概念被稱做執行意圖。就是你寫下完成一樣任務的處境。
+
+句子選自此影片 : 待辦事項永遠做不完嗎？完成任務的秘訣 (How To Actually Do What You Say You're Going To Do)
+
+* Basically => 正式場合少用，like, You know 之類的語助詞，用太多有失專業。
+Basically(那個呀~), it's raining outside. I don't think we can go hiking anymore
+
+1. _
+ * concept [ˋkɑnsɛpt] (n.) 原則；概念；想法
+ - thought, notion
+ - The concept of beauty varies in different countries and cultures.
+ + 美的概念因國家和文化而異。
+
+2. _
+ * implementation [͵ɪmpləmɛnˋteʃən] (n.) 實施、履行
+ - implement (v.) 實施、貫徹
+ - The company is starting to implement a new software system. There will be some major changes.
+ + 該公司正在開始實施一個新的軟件系統，將會有一些重大變化。
+ - major = big
+
+3. _
+ * intention [ɪnˋtɛnʃən] (n.) 意圖、打算
+ - It was never my intention to(I never meant to) exclude you from my party. I just thought you had other plans that day.
+ + 從來沒有打算將你排除在我的聚會之外我只是覺得你那天有其他計劃。
+ * implementation intention [] (.) 執行意向
+
+4. _
+ * condition [kənˋdɪʃən] (n.) 狀態；條件、前提
+ - health condition
+ - Their old apartment was still in great condition, so they decided to turn it into a B&B.
+ - B&B(Bed and breakfast;民宿)
+ + 他們的舊公寓仍處於良好狀態，所以他們決定把它變成一個B＆B(民宿)。

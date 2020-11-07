@@ -1,0 +1,54 @@
+﻿That way, students can access open-license texts, digital media, and other learning materials for a fraction of the cost, but the movement is still in its infancy.
+
+如此，學生便可取得開放授權的文本、數位媒體，還有其他學習資源，全部只需一點花費，然而推動仍在初期階段。
+
+句子選自此影片 : 為什麼大學教科書那麼貴？買完書就要吃土！ (Why Are College Textbooks So Expensive?)
+
+
+* get back into work mode => 放完假的收心
+* get back into the swing of things
+ - After the summer vacation, it took a boy a few days to get back into the swing of things.
+ + 暑假過後，男孩花了幾天時間讓回到常態。
+
+1. _
+ * access [ˋæksɛs] (v.) 讀取 (電腦文檔)
+ - 重音在前面
+ - Users can click on the link to access the file.
+ + 用戶可以單擊鏈接以訪問該文件。
+ * assess [əˋsɛs] (v.) 評價；評定
+ - The art connoisseur is able to assess the value of the art collection.
+ + 藝術鑑賞家能夠評估藝術收藏的價值。
+ + connoisseur [ˌkɑː.nəˈsɝː]（藝術品、食品、飲料等的）鑒賞家，鑒定家，行家
+
+2. _
+ * materials [məˋtɪrɪəlz] (n.) 用具；設備
+ - Writing materials 文具
+ - Building materials 建材
+ - Sewing materials 縫紉用具
+ - The geography teacher uses some teaching materials to help students better understand the landforms of Japan.
+ + 地理老師使用一些教材幫助學生更好地了解日本的地貌。
+ - landform [ˈlænd.fɔːrm] 地型
+ + (better understand) => split infinitive, 分裂不定式: 將副詞或其他詞語放在to和原型動詞之間, to + adv + V, 常用於口語化
+ - material
+ + 材料、原料；可數或不可數
+ + 素材、資料；不可數
+
+3. _
+ * fraction [ˋfrækʃən] (n.) 極小的部分
+ - Mary bought these T-shirts at a fraction of the original price.
+ + Mary以原價的一小部分買了這些t-shirts。
+ * portion [ˋporʃən] (n.) 一部分；一份
+ - After the typhoon, the middle portion of the roof started leaking.
+ + 颱風過後，屋頂的中間部分開始漏水。
+ * proportion [prəˋporʃən] (n.) 部分；份額
+ - International students make up a large proportion of the class.
+ + 國際學生佔全班的很大比例。
+ * fraction => 全體的一部分，較微不足道
+ * portion => 全體中所分配到的一部分，有獨立的意義
+ * proportion => 跟全體間存在定量關係，像是百分比
+
+4. _
+ * infancy [ˋɪnfənsɪ] (n.) 嬰兒期；幼年
+ + be in its infancy => 起步階段
+ - Though self-driving cars seem attracted to drivers, the technology is still in its infancy.
+ + 雖然自動駕駛汽車似乎很有吸引力，但是技術仍處於起步階段。

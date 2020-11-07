@@ -1,0 +1,36 @@
+But the consequence of all this intense labor made gelato an expensive delicacy for the rich, out of reach to most.
+
+然而這費力費時的結果讓 gelato 成為一種有錢人的昂貴美食，大部分的人都吃不到。
+
+句子選自此影片 : Gelato 是甜點界的健康聖品？冷凍三千年的義大利工匠國民美食 (The Gelato Maker | The Artisans of Italy)
+
+* Artisan: PHP-Artisan is a kind of CLI tool in the Laravel.
+
+artisan /ˈɑːr.t̬ə.zən/ (n.) 工匠,技工，職人
+
+artisanal /ˈɑːr.t̬ə.zən.əl/ (adj.) 傳統匠人手工製作的
+
+Artisanal bread 手做麵包
+Artisanal cheese 手做起司
+
+1. _
+ * out of reach [] (phr.) (某人能力等的) 所及範圍
+ - This expensive 15-day-trip to Europe is completely out of my reach/beyond my reach.
+ + 這次昂貴的15天歐洲之旅完全超出了我的範圍/超出我的範圍。
+
+2. _
+ * labor-intensive [] (adj.) 勞動密集型的；勞動集約的
+ - Intense labor 費工；勞動密集的工作
+ - Working as a nurse is quite a labor-intensive job. But I have a passion in this path.
+ + 擔任護士是一項勞動密集型工作。 但我對這條道路充滿熱情。
+
+3. _
+ * gelato [dʒeˋlɑtəʊ] (n.) 義式冰淇淋
+ - He told me that gelato is best served the day it is made.
+ + 他告訴我，冰淇淋在製作當天最好。
+ + served => 端到桌上
+
+4. _
+ * delicacy [ˋdɛləkəsɪ] (n.) (尤指稀有昂貴的) 美食；美味；佳餚
+ - Chicken feet is considered a delicacy in Taiwan.
+ + 雞腳在台灣被認為是美味佳餚。

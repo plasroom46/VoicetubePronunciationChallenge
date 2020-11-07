@@ -1,0 +1,37 @@
+The first few frames prove right away that the cat doesn't start its rotation from a kick.
+
+前面幾幀照片就證實了，貓咪一開始並沒有用踢的方式來旋轉方向。
+
+句子選自此影片 : 你的腳底有磁鐵吧！為什麼貓貓總是能安全落地？ (Why a cat always lands on its feet)
+
+1. _
+ * frame [frem] (n.) 1. 框；框架 2. 骨架 3.（攝影膠片的）畫格；（電視或電影的）畫面，鏡頭 (v.)陷害、誣陷
+ - My dad ran into the door frame of his room because he was using his phone and wasn't paying attention to where he was going.
+ + 我的爸爸撞到他房間的門框，因為他正在使用他的電話，並沒有註意他要去的地方。
+ - I am not fat. I just have a bigger frame.
+ + 我不胖我只是有一個更大的骨架。
+ - She killed her husband and try to frame his mother for the murder. However, after the investigation, she got caught.
+ + 她殺死了她的丈夫並試圖將他的母親定為謀殺罪，但在調查後她被抓住了。
+ + There is nothing wrong with Cara vision. She only wears those glasses because she likes the frames.
+ + Cara視覺沒有任何問題，她只戴眼鏡，因為她喜歡這些鏡架。
+ - frames, glasses, contact lenses
+
+
+2. _
+ * prove [pruv] (v.) 證明；證實
+ - I suggested that we have a race to prove that I could run faster than her.
+ + 我建議我們有一場比賽來證明我跑得比她快。
+ - prove myself/yourself
+ - To prove yourself capable of the job, you have to complete the tasks that I gave you
+ + 為了證明自己有能力完成這項工作，你必須完成我給你的任務。
+ - proof =>
+ + You can't arrest me without any solid proof. You have to let me go.
+ + Bulletproof vests are very heavy as struggled to put it on when I wear it for the first time.
+
+3. _
+ * rotation [roˋteʃən] (n.) （尤指圍繞一個固定點）旋轉，轉動
+ - The Earth's rotation around the Sun is the reason why we have day and night.
+ + 地球圍繞太陽的旋轉是我們白天和黑夜的原因。
+ - in rotation 輪換、輪流、交替
+ - There used to be four seasons in rotation during a year. However, because of climate change, Autumn and Spring are starting to disappear.
+ + 過去一年中有四季輪流，但由於氣候變化，秋季和春季開始消失。
