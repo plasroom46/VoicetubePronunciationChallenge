@@ -104,7 +104,7 @@ def main():
     checkFile()
     challengeId=getId()
     content=getContent(challengeId)
-    studentsName=["Melody Tai","undefined"]
+    studentsName=["Melody Tai","undefined","Wen Tsai"]
     data=getMessage(challengeId,studentsName)
     for name in studentsName:
         if name in data:
