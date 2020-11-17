@@ -75,17 +75,19 @@ def getContent(challengeId:int)->str:
 
     content+= data.content.strip()+newLine*2+data.translated_content.strip()+newLine*2+data.title.strip()+newLine*3
 
+    vocabCount=0
     index=1
     for vocabs in data.vocabularies:
         content+=f"{index}." + newLine
         for vocab in vocabs.definitions:
             content+=f"* {vocab.text.strip()} [{vocab.kk.strip()}] {vocab.pos.strip()} {vocab.content.strip()}"+newLine
             content+="- " + newLine
+            vocabCount+=1
         index+=1
         content+=newLine
-    return content
+    return content,vocabCount
 
-def getMessage(challengeId:int, studentNames:List[str])->Dict[str,str]:
+def getMessage(challengeId:int, studentNames:List[str],vocabCount:int)->Dict[str,str]:
     url=f"https://vtapi.voicetube.com/v2.1.1/zhTW/pronunciationChallenges/{challengeId}/comments?platform=Web&page[offset]=0&page[limit]=100&fetchMode=all"
     data=getWebContent(url)
     dicts={}
@@ -94,18 +96,18 @@ def getMessage(challengeId:int, studentNames:List[str])->Dict[str,str]:
     for datum in data:
         if datum.owner.display_name in studentNames:
             note=datum.content.replace("\t","")
-            if len(note)>50:
+            if len(note)>vocabCount*10:
                 dicts[datum.owner.display_name]=note
-        if len(dicts)==2: break
+        if len(dicts)==len(studentNames): break
     return dicts
 
 
 def main():
     checkFile()
     challengeId=getId()
-    content=getContent(challengeId)
-    studentsName=["Melody Tai","undefined","Wen Tsai"]
-    data=getMessage(challengeId,studentsName)
+    content,vocabCount=getContent(challengeId)
+    studentsName=["Melody Tai","undefined","Emma","Wen Tsai"]
+    data=getMessage(challengeId,studentsName,vocabCount)
     for name in studentsName:
         if name in data:
             content+="\n\n\n\n" + data[name]
