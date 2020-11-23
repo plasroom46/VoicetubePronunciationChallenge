@@ -87,18 +87,18 @@ def getContent(challengeId:int)->str:
         content+=newLine
     return content,vocabCount
 
-def getMessage(challengeId:int, studentNames:List[str],vocabCount:int)->Dict[str,str]:
-    url=f"https://vtapi.voicetube.com/v2.1.1/zhTW/pronunciationChallenges/{challengeId}/comments?platform=Web&page[offset]=0&page[limit]=100&fetchMode=all"
+def getMessage(challengeId:int, usernames:List[str],vocabCount:int)->Dict[str,str]:
+    url=f"https://vtapi.voicetube.com/v2.1.1/zhTW/pronunciationChallenges/{challengeId}/comments?platform=Web&page[offset]=0&page[limit]=500&fetchMode=all"
     data=getWebContent(url)
     dicts={}
     data=students_from_dict(json.loads(data))
     data=data.data
     for datum in data:
-        if datum.owner.display_name in studentNames:
+        if datum.owner.user_name in usernames:
             note=datum.content.replace("\t","")
             if len(note)>vocabCount*10:
-                dicts[datum.owner.display_name]=note
-        if len(dicts)==len(studentNames): break
+                dicts[datum.owner.user_name]=note
+        if len(dicts)==len(usernames): break
     return dicts
 
 
@@ -106,9 +106,10 @@ def main():
     checkFile()
     challengeId=getId()
     content,vocabCount=getContent(challengeId)
-    studentsName=["Melody Tai","undefined","Emma","Wen Tsai"]
-    data=getMessage(challengeId,studentsName,vocabCount)
-    for name in studentsName:
+    # displaynames=["Melody Tai","undefined","Emma","Wen Tsai"]
+    usernames=["10205256245518930","gotraveltoworld","1264052757005391","1009638965715348"]
+    data=getMessage(challengeId,usernames,vocabCount)
+    for name in usernames:
         if name in data:
             content+="\n\n\n\n" + data[name]
             break
