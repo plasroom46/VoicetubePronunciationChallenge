@@ -80,7 +80,8 @@ def getContent(challengeId:int)->str:
     for vocabs in data.vocabularies:
         content+=f"{index}." + newLine
         for vocab in vocabs.definitions:
-            content+=f"* {vocab.text.strip()} [{vocab.kk.strip()}] {vocab.pos.strip()} {vocab.content.strip()}"+newLine
+            partOfSpeech=vocab.pos.strip().replace("..",".")
+            content+=f"* {vocab.text.strip()} [{vocab.kk.strip()}] {partOfSpeech} {vocab.content.strip()}"+newLine
             content+="- " + newLine
             vocabCount+=1
         index+=1
