@@ -61,6 +61,7 @@ def from_list(f: Callable[[Any], T], x: Any) -> List[T]:
 
 class ContentLanguage(Enum):
     EN = "en"
+    JA = "ja"
     ZH_TW = "zhTW"
 
 

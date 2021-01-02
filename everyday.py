@@ -36,7 +36,7 @@ def getWebContent(url:str)->str:
 
 def checkFile():
     if not os.path.isdir(directory):
-        os.mkdir(directory)
+        os.makedirs(directory)
 
     if os.path.exists(filepath):
         print(f"檔案已存在：{filepath}")
