@@ -55,7 +55,11 @@ def getId()->int:
 
     for script in scripts:
         if(script.string and "challengeId" in script.string):
-            challengeId=int(script.string.split('challengeId:')[1].split(',')[0].split("'")[1])
+            challengeId=script.string.split('challengeId:')[1].split(',')[0].split("'")[1]
+            if challengeId=='':
+                challengeId=-1
+            else:
+                challengeId=int(challengeId)
             break
 
     return challengeId
@@ -107,6 +111,9 @@ def getMessage(challengeId:int, usernames:List[str],vocabCount:int)->Dict[str,st
 def main():
     checkFile()
     challengeId=getId()
+    if challengeId==-1:
+        print(f'The date {date} is not recorded')
+        sys.exit()
     content,vocabCount=getContent(challengeId)
     # displaynames=["Melody Tai","undefined","Emma","Wen Tsai"]
     usernames=["10205256245518930","gotraveltoworld","1264052757005391","1009638965715348"]
