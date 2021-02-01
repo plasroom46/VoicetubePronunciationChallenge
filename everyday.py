@@ -93,18 +93,18 @@ def getContent(challengeId:int)->str:
         content+=newLine
     return content,vocabCount
 
-def getMessage(challengeId:int, usernames:List[str],vocabCount:int)->Dict[str,str]:
+def getMessage(challengeId:int, ids:List[str],vocabCount:int)->Dict[str,str]:
     url=f"https://vtapi.voicetube.com/v2.1.1/zhTW/pronunciationChallenges/{challengeId}/comments?platform=Web&page[offset]=0&page[limit]=500&fetchMode=all"
     data=getWebContent(url)
     dicts={}
     data=students_from_dict(json.loads(data))
     data=data.data
     for datum in data:
-        if datum.owner.user_name in usernames:
+        if datum.owner.id in ids:
             note=datum.content.replace("\t","")
             if len(note)>vocabCount*10:
                 dicts[datum.owner.user_name]=note
-        if len(dicts)==len(usernames): break
+                break
     return dicts
 
 
@@ -115,13 +115,16 @@ def main():
         print(f'The date {date} is not recorded')
         sys.exit()
     content,vocabCount=getContent(challengeId)
+
+    # hostDisplaynames=["Ashley","Selina","Ken Miao","Annie Huang","Wen","Doris","Minjane"]
+    hostIds=[1958356,3981877,3791759,4030764,4209610,4030768,4034826]
     # displaynames=["Melody Tai","undefined","Emma","Wen Tsai"]
-    usernames=["10205256245518930","gotraveltoworld","1264052757005391","1009638965715348"]
-    data=getMessage(challengeId,usernames,vocabCount)
-    for name in usernames:
-        if name in data:
-            content+="\n\n\n\n" + data[name]
-            break
+    ids=[545319,1352160,1895762,1958505]
+    hostIds.extend(ids)
+    data=getMessage(challengeId,hostIds,vocabCount)
+    for key in data.keys():
+        content+="\n\n\n\n" + data[key]
+        break
     with open(filepath, 'w',encoding='utf-8') as f:
         f.write(content)
     print(f"{filepath=}")
