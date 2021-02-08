@@ -6,8 +6,9 @@ from datetime import date,timedelta
 import os
 import sys
 import argparse
-from Models.Host import *
-from Models.Students import *
+from Models.Host import host_from_dict
+from Models.Students import students_from_dict
+from Models.CommentIds import comment_ids_from_dict
 
 
 parser = argparse.ArgumentParser(description='Get Setence and Vocabs')
@@ -93,13 +94,24 @@ def getContent(challengeId:int)->str:
         content+=newLine
     return content,vocabCount
 
-def getMessage(challengeId:int, ids:List[str],vocabCount:int)->Dict[str,str]:
+def getMessage(challengeId:int,vocabCount:int)->Dict[str,str]:
     url=f"https://vtapi.voicetube.com/v2.1.1/zhTW/pronunciationChallenges/{challengeId}/comments?platform=Web&page[offset]=0&page[limit]=500&fetchMode=all"
     data=getWebContent(url)
     dicts={}
     data=students_from_dict(json.loads(data))
     data=data.data
-    for datum in data:
+
+    with open("CommentIds.json",'r',encoding='utf-8') as fr:
+        commentIds=comment_ids_from_dict(json.loads(fr.read()))
+
+    ids=[]
+
+    for host in commentIds.hosts:
+        ids.append(host.id)
+    for user in commentIds.users:
+        ids.append(user.id)
+
+    for datum in data:       
         if datum.owner.id in ids:
             note=datum.content.replace("\t","")
             if len(note)>vocabCount*10:
@@ -116,12 +128,7 @@ def main():
         sys.exit()
     content,vocabCount=getContent(challengeId)
 
-    # hostDisplaynames=["Ashley","Selina","Ken Miao","Annie Huang","Wen","Doris","Minjane"]
-    hostIds=[1958356,3981877,3791759,4030764,4209610,4030768,4034826]
-    # displaynames=["Melody Tai","undefined","Emma","Wen Tsai"]
-    ids=[545319,1352160,1895762,1958505]
-    hostIds.extend(ids)
-    data=getMessage(challengeId,hostIds,vocabCount)
+    data=getMessage(challengeId,vocabCount)
     for key in data.keys():
         content+="\n\n\n\n" + data[key]
         break
