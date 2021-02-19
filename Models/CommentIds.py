@@ -48,16 +48,16 @@ def to_class(c: Type[T], x: Any) -> dict:
 
 
 @dataclass
-class Host:
+class User:
     displayname: Optional[str] = None
     id: Optional[int] = None
 
     @staticmethod
-    def from_dict(obj: Any) -> 'Host':
+    def from_dict(obj: Any) -> 'User':
         assert isinstance(obj, dict)
         displayname = from_union([from_str, from_none], obj.get("displayname"))
         id = from_union([from_int, from_none], obj.get("id"))
-        return Host(displayname, id)
+        return User(displayname, id)
 
     def to_dict(self) -> dict:
         result: dict = {}
@@ -68,20 +68,17 @@ class Host:
 
 @dataclass
 class CommentIDS:
-    hosts: Optional[List[Host]] = None
-    users: Optional[List[Host]] = None
+    users: Optional[List[User]] = None
 
     @staticmethod
     def from_dict(obj: Any) -> 'CommentIDS':
         assert isinstance(obj, dict)
-        hosts = from_union([lambda x: from_list(Host.from_dict, x), from_none], obj.get("hosts"))
-        users = from_union([lambda x: from_list(Host.from_dict, x), from_none], obj.get("users"))
-        return CommentIDS(hosts, users)
+        users = from_union([lambda x: from_list(User.from_dict, x), from_none], obj.get("users"))
+        return CommentIDS(users)
 
     def to_dict(self) -> dict:
         result: dict = {}
-        result["hosts"] = from_union([lambda x: from_list(lambda x: to_class(Host, x), x), from_none], self.hosts)
-        result["users"] = from_union([lambda x: from_list(lambda x: to_class(Host, x), x), from_none], self.users)
+        result["users"] = from_union([lambda x: from_list(lambda x: to_class(User, x), x), from_none], self.users)
         return result
 
 

@@ -66,7 +66,7 @@ def getId()->int:
     return challengeId
 
 # 句子
-def getContent(challengeId:int)->str:
+def getContent(challengeId:int)->tuple:
     url=f"https://vtapi.voicetube.com/v2.1.1/zhTW/pronunciationChallenges/{challengeId}?platform=Web&userId="
 
     data=getWebContent(url)
@@ -92,32 +92,32 @@ def getContent(challengeId:int)->str:
             vocabCount+=1
         index+=1
         content+=newLine
-    return content,vocabCount
+    return content,vocabCount,data.host.id
 
-def getMessage(challengeId:int,vocabCount:int)->Dict[str,str]:
+def getMessage(challengeId:int,vocabCount:int, ids:list)->Dict[int,str]:
     url=f"https://vtapi.voicetube.com/v2.1.1/zhTW/pronunciationChallenges/{challengeId}/comments?platform=Web&page[offset]=0&page[limit]=500&fetchMode=all"
     data=getWebContent(url)
     dicts={}
     data=students_from_dict(json.loads(data))
     data=data.data
 
+    for datum in data:       
+        if datum.owner.id in ids:
+            note=datum.content.replace("\t","")
+            if len(note)>vocabCount*10:
+                dicts[datum.owner.id]=note
+                if datum.owner.id==ids[0] or len(dicts)==len(ids)-1: break
+    return dicts
+
+def getCommentIds()->list:
     with open("CommentIds.json",'r',encoding='utf-8') as fr:
         commentIds=comment_ids_from_dict(json.loads(fr.read()))
 
     ids=[]
 
-    for host in commentIds.hosts:
-        ids.append(host.id)
     for user in commentIds.users:
         ids.append(user.id)
-
-    for datum in data:       
-        if datum.owner.id in ids:
-            note=datum.content.replace("\t","")
-            if len(note)>vocabCount*10:
-                dicts[datum.owner.user_name]=note
-                break
-    return dicts
+    return ids
 
 
 def main():
@@ -126,12 +126,16 @@ def main():
     if challengeId==-1:
         print(f'The date {date} is not recorded')
         sys.exit()
-    content,vocabCount=getContent(challengeId)
+    content,vocabCount,hostId=getContent(challengeId)
+    
+    ids=[hostId]
+    ids.extend(getCommentIds())
+    data=getMessage(challengeId,vocabCount,ids)
+    for id in ids:
+        if id in data:
+            content+="\n\n\n\n" + data[id]
+            break
 
-    data=getMessage(challengeId,vocabCount)
-    for key in data.keys():
-        content+="\n\n\n\n" + data[key]
-        break
     with open(filepath, 'w',encoding='utf-8') as f:
         f.write(content)
     print(f"{filepath=}")

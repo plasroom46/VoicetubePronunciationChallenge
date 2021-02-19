@@ -1,35 +1,4 @@
 {
-    "hosts":
-    [
-        {
-            "displayname":"Ashley",
-            "id":4030765
-        },
-         {
-            "displayname":"Selina",
-            "id":3981877
-        },
-         {
-            "displayname":"Ken Miao",
-            "id":3791759
-        },
-         {
-            "displayname":"Annie Huang",
-            "id":4030764
-        },
-         {
-            "displayname":"Wen",
-            "id":4209610
-        },
-         {
-            "displayname":"Doris",
-            "id":4030768
-        },
-         {
-            "displayname":"Minjane",
-            "id":4034826
-        }
-    ],
     "users":
     [
         {
