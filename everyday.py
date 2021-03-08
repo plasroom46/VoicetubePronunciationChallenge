@@ -78,7 +78,8 @@ def getContent(challengeId:int)->tuple:
 
     newLine="\r\n"
 
-    content+= data.content.strip()+newLine*2+data.translated_content.strip()+newLine*2+data.title.strip()+newLine*3
+    video=f"[{data.title.strip()}](https://tw.voicetube.com/videos/{data.video_id}?ref=everyday)"
+    content+= data.content.strip()+newLine*2+data.translated_content.strip()+newLine*2+video+newLine*3
 
     vocabCount=0
     index=1
