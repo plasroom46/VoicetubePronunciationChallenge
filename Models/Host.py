@@ -45,6 +45,7 @@ def from_bool(x: Any) -> bool:
 def from_list(f: Callable[[Any], T], x: Any) -> List[T]:
     assert isinstance(x, list)
     return [f(y) for y in x]
+    
 
 
 def to_class(c: Type[T], x: Any) -> dict:
@@ -56,6 +57,14 @@ def is_type(t: Type[T], x: Any) -> T:
     assert isinstance(x, t)
     return x
 
+def from_float(x: Any) -> float:
+    assert isinstance(x, (float, int)) and not isinstance(x, bool)
+    return float(x)
+
+
+def to_float(x: Any) -> float:
+    assert isinstance(x, float)
+    return x
 
 @dataclass
 class HostClass:
@@ -155,7 +164,7 @@ class Data:
     release_date_text: Optional[int] = None
     video_id: Optional[int] = None
     content: Optional[str] = None
-    duration: Optional[int] = None
+    duration: Optional[float] = None
     host: Optional[HostClass] = None
     id: Optional[int] = None
     image_url: Optional[str] = None
@@ -174,13 +183,13 @@ class Data:
         release_date_text = from_union([from_none, lambda x: int(from_str(x))], obj.get("releaseDateText"))
         video_id = from_union([from_int, from_none], obj.get("videoId"))
         content = from_union([from_str, from_none], obj.get("content"))
-        duration = from_union([from_int, from_none], obj.get("duration"))
+        duration = from_union([from_float, from_none], obj.get("duration"))
         host = from_union([HostClass.from_dict, from_none], obj.get("host"))
         id = from_union([from_int, from_none], obj.get("id"))
         image_url = from_union([from_str, from_none], obj.get("imageUrl"))
         published_at = from_union([from_int, from_none], obj.get("publishedAt"))
         created_at = from_union([from_int, from_none], obj.get("createdAt"))
-        start_at = from_union([from_int, from_none], obj.get("startAt"))
+        start_at = from_union([from_float, from_none], obj.get("startAt"))
         title = from_union([from_str, from_none], obj.get("title"))
         youtube_id = from_union([from_str, from_none], obj.get("youtubeId"))
         audio_url = from_union([from_str, from_none], obj.get("audioUrl"))
@@ -193,13 +202,13 @@ class Data:
         result["releaseDateText"] = from_union([lambda x: from_none((lambda x: is_type(type(None), x))(x)), lambda x: from_str((lambda x: str((lambda x: is_type(int, x))(x)))(x))], self.release_date_text)
         result["videoId"] = from_union([from_int, from_none], self.video_id)
         result["content"] = from_union([from_str, from_none], self.content)
-        result["duration"] = from_union([from_int, from_none], self.duration)
+        result["duration"] = from_union([from_float, from_none], self.duration)
         result["host"] = from_union([lambda x: to_class(HostClass, x), from_none], self.host)
         result["id"] = from_union([from_int, from_none], self.id)
         result["imageUrl"] = from_union([from_str, from_none], self.image_url)
         result["publishedAt"] = from_union([from_int, from_none], self.published_at)
         result["createdAt"] = from_union([from_int, from_none], self.created_at)
-        result["startAt"] = from_union([from_int, from_none], self.start_at)
+        result["startAt"] = from_union([from_float, from_none], self.start_at)
         result["title"] = from_union([from_str, from_none], self.title)
         result["youtubeId"] = from_union([from_str, from_none], self.youtube_id)
         result["audioUrl"] = from_union([from_str, from_none], self.audio_url)
