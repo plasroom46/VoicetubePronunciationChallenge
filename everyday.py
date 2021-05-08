@@ -85,7 +85,8 @@ def getContent(challengeId: int, audioPath: str) -> tuple:
         for vocab in vocabs.definitions:
             partOfSpeech = vocab.pos.strip()
             partOfSpeech = f'{partOfSpeech[:partOfSpeech.index(".")]}.)'
-            content += f"* {vocab.text.strip()} [{vocab.kk.strip()}] {partOfSpeech} {vocab.content.strip()}"+newLine
+            kk="" if vocab.kk==None else f"[{vocab.kk.strip()}]"
+            content += f"* {vocab.text.strip()} {kk} {partOfSpeech} {vocab.content.strip()}"+newLine
             content += "- " + newLine
             vocabCount += 1
         index += 1
