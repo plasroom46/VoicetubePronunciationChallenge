@@ -71,7 +71,7 @@ def getContent(challengeId: int, audioPath: str) -> tuple:
 
     data = data.data
 
-    newLine = "\r\n"
+    newLine = "\n"
 
     video = f"[{data.title.strip()}](https://tw.voicetube.com/videos/{data.video_id})"
     content += data.content.strip()+newLine*2+data.translated_content.strip() + \
@@ -85,8 +85,8 @@ def getContent(challengeId: int, audioPath: str) -> tuple:
         for vocab in vocabs.definitions:
             partOfSpeech = vocab.pos.strip()
             partOfSpeech = f'{partOfSpeech[:partOfSpeech.index(".")]}.)'
-            kk="" if vocab.kk==None else f"[{vocab.kk.strip()}]"
-            content += f"* {vocab.text.strip()} {kk} {partOfSpeech} {vocab.content.strip()}"+newLine
+            kk="" if vocab.kk==None or vocab.kk=="" else f"[{vocab.kk.strip()}] "
+            content += f"* {vocab.text.strip()} {kk}{partOfSpeech} {vocab.content.strip()}"+newLine
             content += ": " + newLine
             content += "- " + newLine
             vocabCount += 1
