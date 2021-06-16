@@ -76,7 +76,8 @@ def getContent(challengeId: int, audioPath: str) -> tuple:
     video = f"[{data.title.strip()}](https://tw.voicetube.com/videos/{data.video_id})"
     content += data.content.strip()+newLine*2+data.translated_content.strip() + \
         newLine*2+video+newLine*2
-    content += f"[主持人解講]({audioPath})"+newLine*3
+    content += f"[主持人解講]({audioPath})"+newLine*2
+    content+="Pronunciation tips:"+newLine*4
 
     vocabCount = 0
     index = 1
