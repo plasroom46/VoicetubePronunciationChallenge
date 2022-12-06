@@ -58,9 +58,20 @@ def getAudioPath() -> str:
 
     return audioPath
 
-# 句子
+def removeExtraSpace(content: str, mostCount: int = 1) -> str:
+    spaceCount = 0
+    newContent= ""
+    for c in content:
+        if c == " ":
+            if spaceCount < mostCount:
+                spaceCount += 1
+                newContent += c
+        else:
+            spaceCount = 0
+            newContent += c
+    return newContent
 
-
+# setence
 def getContent(challengeId: int, audioPath: str) -> tuple:
     url = f"https://vtapi.voicetube.com/v2.1.1/zhTW/pronunciationChallenges/{challengeId}?platform=Web&userId="
 
@@ -73,8 +84,8 @@ def getContent(challengeId: int, audioPath: str) -> tuple:
 
     newLine = "\n"
 
-    video = f"[{data.title.strip()}](https://tw.voicetube.com/videos/{data.video_id})"
-    content += data.content.strip()+newLine*2+data.translated_content.strip() + \
+    video = f"[{removeExtraSpace(data.title.strip())}](https://tw.voicetube.com/videos/{data.video_id})"
+    content += removeExtraSpace(data.content.strip())+newLine*2+removeExtraSpace(data.translated_content.strip()) + \
         newLine*2+video+newLine*2
     content += f"[主持人解講]({audioPath})"+newLine*2
     content+="Pronunciation tips:"+newLine*4
@@ -84,11 +95,11 @@ def getContent(challengeId: int, audioPath: str) -> tuple:
     for vocabs in data.vocabularies:
         content += f"{index}." + newLine
         for vocab in vocabs.definitions:
-            partOfSpeech = vocab.pos.strip()
+            partOfSpeech = removeExtraSpace(vocab.pos.strip())
             partOfSpeech = f'{partOfSpeech[:partOfSpeech.index(".")]}.)'
-            kk="" if vocab.kk==None or vocab.kk=="" else f"[{vocab.kk.strip()}] "
-            chinese="" if vocab.content == None else vocab.content.strip()
-            content += f"* {vocab.text.strip()} {kk}{partOfSpeech} {chinese}"+newLine
+            kk="" if vocab.kk==None or vocab.kk=="" else f"[{removeExtraSpace(vocab.kk.strip())}] "
+            chinese="" if vocab.content == None else removeExtraSpace(vocab.content.strip())
+            content += f"* {removeExtraSpace(vocab.text.strip())} {kk}{partOfSpeech} {chinese}"+newLine
             content += ": " + newLine
             content += "- " + newLine
             vocabCount += 1
