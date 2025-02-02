@@ -12,7 +12,7 @@ from Models.CommentIds import comment_ids_from_dict
 
 
 parser = argparse.ArgumentParser(description='Get Setence and Vocabs')
-parser.add_argument('--day', nargs='?', type=int,
+parser.add_argument('-d', '--day', nargs='?', type=int,
                     default=0, help='get note count today')
 args = parser.parse_args()
 
