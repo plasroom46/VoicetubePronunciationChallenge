@@ -51,10 +51,20 @@ def getAudioPath() -> str:
     data = getWebContent(url)
 
     root = bs4.BeautifulSoup(data, "html.parser")
-    source = root.find("source")
+    next_data = root.find(id="__NEXT_DATA__")
+    jsonData = json.loads(next_data.string)
     audioPath = None
-    if source is not None:
-        audioPath = source["src"]
+    for query in jsonData['props']['pageProps']['dehydratedState']['queries']:
+        try:
+            final_data = query['state']['data']['data']['data']
+            if type(final_data) == list:
+                continue
+            else:
+                audioPath = final_data['audioUrl']
+                break
+        except KeyError:
+            pass
+    
 
     return audioPath
 
