@@ -1,0 +1,22 @@
+I can see revenue per user in the other column, which is the custom calculated metric I've created.
+
+我可以在另一欄中看到每位使用者收益，這是我建立的自訂計算指標。
+
+[數據分析必學：手把手教你活用 GA 自訂計算指標功能（Google Analytics Tutorial - Custom calculated metrics）](https://tw.voicetube.com/videos/209295)
+
+[主持人解講](https://cdn.voicetube.com/everyday_records/11187/1782234378.mp3)
+
+Pronunciation tips:
+
+revenue
+column
+custom
+calculated
+metric
+which is
+metric I've
+
+1.
+* metric [ˈmɛtrɪk] (n.) 衡量標準；度量指標
+: 
+- 
