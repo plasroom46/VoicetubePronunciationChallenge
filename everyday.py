@@ -14,6 +14,7 @@ from Models.CommentIds import comment_ids_from_dict
 parser = argparse.ArgumentParser(description='Get Setence and Vocabs')
 parser.add_argument('-d', '--day', nargs='?', type=int,
                     default=0, help='get note count today')
+parser.add_argument('-a', '--audio', nargs='?', type=str, help='host audio path')
 args = parser.parse_args()
 
 
@@ -111,10 +112,11 @@ def getContent(challengeId: int, audioPath: str) -> tuple:
             chinese="" if vocab.content == None else removeExtraSpace(vocab.content.strip())
             content += f"* {removeExtraSpace(vocab.text.strip())} {kk}{partOfSpeech} {chinese}"+newLine
             content += ": " + newLine
-            content += "- " + newLine
+            content += "- " + (newLine if vocabs != data.vocabularies[-1] else "")
             vocabCount += 1
         index += 1
-        content += newLine
+        if vocabs != data.vocabularies[-1]:
+            content += newLine
     return content, vocabCount, data.host.id
 
 
@@ -148,7 +150,12 @@ def getCommentIds() -> list:
 
 def main():
     checkFile()
-    audioPath = getAudioPath()
+    # audioPath = getAudioPath()
+    
+    # # host recording audio path example
+    # audioPath = "https://cdn.voicetube.com/everyday_records/10946/1775026877.mp3"
+
+    audioPath = args.audio
     if audioPath is None:
         print(f'The date {date} is not recorded')
         sys.exit()
